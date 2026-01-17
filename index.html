@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML5 Webpage | Web Development Guide</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 
+        Header Section Purpose: 
+        The <header> element represents introductory content for its nearest ancestor sectioning content.
+        Typically contains site branding, main heading, and a brief description.
+        It helps screen readers and search engines understand the page introduction.
+    -->
+    <header class="site-header">
+        <div class="container">
+            <h1><i class="fas fa-code"></i> Semantic HTML5 Guide</h1>
+            <p class="tagline">Building accessible, structured, and meaningful web content</p>
+            <p class="description">This webpage demonstrates the proper use of semantic HTML5 elements to create well-structured, accessible, and SEO-friendly web content.</p>
+        </div>
+    </header>
+
+    <!-- 
+        Navigation Section Purpose:
+        The <nav> element represents a section of a page that contains navigation links.
+        It helps users and assistive technologies identify the primary navigation area.
+        Important for keyboard navigation and screen readers.
+    -->
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a href="#"><i class="fas fa-blog"></i> Articles</a></li>
+                <li><a href="#"><i class="fas fa-tools"></i> Resources</a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container main-content">
+        <!-- 
+            Article Section Purpose:
+            The <article> element represents a self-contained composition that is independently
+            distributable or reusable. It should make sense on its own.
+            Examples: blog post, news article, forum post, product card.
+            Helps search engines identify the main content of the page.
+        -->
+        <article class="main-article">
+            <header class="article-header">
+                <h2>The Importance of Semantic HTML5</h2>
+                <div class="article-meta">
+                    <span><i class="far fa-calendar"></i> Published: October 15, 2023</span>
+                    <span><i class="far fa-user"></i> Author: Jane Developer</span>
+                    <span><i class="far fa-clock"></i> Read time: 5 minutes</span>
+                </div>
+            </header>
+            
+            <section class="article-section">
+                <h3>What is Semantic HTML?</h3>
+                <p>Semantic HTML refers to the use of HTML markup to reinforce the meaning of the information in webpages rather than merely defining its presentation. Semantic elements clearly describe their meaning to both the browser and the developer.</p>
+                
+                <div class="highlight-box">
+                    <p><strong>Example:</strong> Instead of using a generic <code>&lt;div&gt;</code> with a class of "header", semantic HTML uses <code>&lt;header&gt;</code> to define the header section of a webpage.</p>
+                </div>
+            </section>
+            
+            <section class="article-section">
+                <h3>Benefits of Semantic Elements</h3>
+                <ul>
+                    <li><strong>Accessibility:</strong> Screen readers and other assistive technologies can better interpret the content structure.</li>
+                    <li><strong>SEO:</strong> Search engines give more weight to content within semantic elements.</li>
+                    <li><strong>Maintainability:</strong> Code is easier to read and maintain when elements have meaningful names.</li>
+                    <li><strong>Future Compatibility:</strong> Semantic elements are more likely to work correctly with future web technologies.</li>
+                </ul>
+                
+                <figure class="article-figure">
+                    <div class="figure-placeholder">
+                        <i class="fas fa-project-diagram"></i>
+                        <p>HTML Document Structure</p>
+                    </div>
+                    <figcaption>Figure 1: Semantic HTML document structure vs non-semantic structure</figcaption>
+                </figure>
+            </section>
+            
+            <section class="article-section">
+                <h3>Common Semantic Elements</h3>
+                <table class="semantic-table">
+                    <thead>
+                        <tr>
+                            <th>Element</th>
+                            <th>Purpose</th>
+                            <th>Usage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>&lt;header&gt;</code></td>
+                            <td>Introductory content</td>
+                            <td>Page header, article header</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;nav&gt;</code></td>
+                            <td>Navigation links</td>
+                            <td>Main menu, table of contents</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;main&gt;</code></td>
+                            <td>Primary content</td>
+                            <td>Main page content (unique per page)</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;article&gt;</code></td>
+                            <td>Independent content</td>
+                            <td>Blog post, news article</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;section&gt;</code></td>
+                            <td>Thematic grouping</td>
+                            <td>Chapters, grouped content</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;aside&gt;</code></td>
+                            <td>Related content</td>
+                            <td>Sidebars, pull quotes</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;footer&gt;</code></td>
+                            <td>Closing content</td>
+                            <td>Page footer, article footer</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            
+            <footer class="article-footer">
+                <p><strong>Tags:</strong> HTML5, Semantic Web, Web Development, Accessibility</p>
+                <button class="share-btn"><i class="fas fa-share-alt"></i> Share Article</button>
+                <button class="like-btn"><i class="far fa-thumbs-up"></i> Like</button>
+            </footer>
+        </article>
+
+        <!-- 
+            Aside Section Purpose:
+            The <aside> element represents a portion of a document whose content is only indirectly
+            related to the main content. Often used for sidebars, pull quotes, advertisements,
+            or related content groups.
+            It helps browsers and assistive technologies identify complementary content.
+        -->
+        <aside class="sidebar">
+            <div class="sidebar-widget">
+                <h3><i class="fas fa-link"></i> Related Articles</h3>
+                <ul class="related-list">
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Accessibility Best Practices</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> CSS Grid vs Flexbox</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Modern JavaScript ES6+ Features</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Responsive Web Design Principles</a></li>
+                </ul>
+            </div>
+            
+            <div class="sidebar-widget">
+                <h3><i class="fas fa-download"></i> Resources</h3>
+                <ul class="resources-list">
+                    <li><a href="#"><i class="fas fa-file-pdf"></i> HTML5 Semantic Cheatsheet (PDF)</a></li>
+                    <li><a href="#"><i class="fas fa-video"></i> Web Accessibility Tutorial</a></li>
+                    <li><a href="#"><i class="fas fa-code"></i> Semantic HTML Examples</a></li>
+                </ul>
+            </div>
+            
+            <div class="sidebar-widget">
+                <h3><i class="fas fa-newspaper"></i> Newsletter</h3>
+                <p>Subscribe to our weekly web development tips:</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            
+            <div class="sidebar-widget">
+                <h3><i class="fas fa-calendar-alt"></i> Upcoming Events</h3>
+                <div class="event">
+                    <h4>Web Accessibility Workshop</h4>
+                    <p><i class="far fa-calendar"></i> November 5, 2023</p>
+                    <p>Online webinar on implementing accessibility best practices.</p>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- 
+        Footer Section Purpose:
+        The <footer> element represents a footer for its nearest sectioning content or root element.
+        Typically contains information about the author, copyright data, contact information,
+        sitemap, back-to-top links, or related documents.
+        Helps identify the end of a page or article.
+    -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-sitemap"></i> Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3><i class="fas fa-envelope"></i> Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Web Dev Street, Code City</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@semanticweb.dev</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3><i class="fas fa-share-alt"></i> Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <p>Follow us for web development tips and tutorials.</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Semantic Web Guide. All rights reserved. | Designed with semantic HTML5</p>
+                <p>This webpage is an exercise in using semantic HTML5 elements for better structure, accessibility, and SEO.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple interactivity for demonstration
+        document.addEventListener('DOMContentLoaded', function() {
+            // Like button functionality
+            const likeBtn = document.querySelector('.like-btn');
+            likeBtn.addEventListener('click', function() {
+                this.innerHTML = '<i class="fas fa-thumbs-up"></i> Liked!';
+                this.style.backgroundColor = '#4CAF50';
+            });
+            
+            // Share button functionality
+            const shareBtn = document.querySelector('.share-btn');
+            shareBtn.addEventListener('click', function() {
+                alert('Article shared! (This is a demo)');
+            });
+            
+            // Newsletter form submission
+            const newsletterForm = document.querySelector('.newsletter-form');
+            newsletterForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const email = this.querySelector('input[type="email"]').value;
+                alert(`Thank you for subscribing with: ${email}`);
+                this.reset();
+            });
+        });
+    </script>
+</body>
+</html>
